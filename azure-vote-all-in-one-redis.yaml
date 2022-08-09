@@ -12,8 +12,6 @@ spec:
       labels:
         app: azure-vote-back
     spec:
-      nodeSelector:
-        "kubernetes.io/os": linux
       containers:
       - name: azure-vote-back
         image: webage.azurecr.io/azuredocs/azure-vote-front:v1
@@ -53,8 +51,6 @@ spec:
       labels:
         app: azure-vote-front
     spec:
-      nodeSelector:
-        "beta.kubernetes.io/os": linux
       containers:
       - name: azure-vote-front
         image: mcr.microsoft.com/azuredocs/azure-vote-front:v1
